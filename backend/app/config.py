@@ -24,7 +24,7 @@ class Settings(BaseSettings):
     openai_embedding_dimensions: int = Field(default=1536, gt=0)
 
     pinecone_api_key: SecretStr
-    pinecone_index_name: str = "ironstore-knowledge"
+    pinecone_index_name: str = "ironstore-openai"
     pinecone_index_host: str
     pinecone_namespace: str = "ironstore-v1"
 

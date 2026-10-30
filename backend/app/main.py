@@ -162,7 +162,11 @@ def chat(payload: ChatRequest, request: Request):
 
     try:
         result = request.app.state.assistant.answer(
-            payload.question
+            question=payload.question,
+            history=[
+                message.model_dump()
+                for message in payload.history
+            ],
         )
 
         return ChatResponse.model_validate(result)
