@@ -4,6 +4,10 @@ An internal knowledge assistant that helps IronStore employees find product info
 
 Built as an Ironhack AI Engineering mini-project using a synthetic enterprise document collection.
 
+## Live demo
+
+[Open IronStore AI Assistant](https://ironstore-ai-assistant.vercel.app/)
+
 ## Features
 
 - Natural-language questions across company departments and product catalogues.
@@ -192,9 +196,11 @@ npm run build
 
 Also check a policy question, a product SKU, a follow-up, an unsupported question, clickable citations, PDF page links, browser-history persistence, error recovery, and mobile navigation. Confirm long source dialogs are scrollable and readable at normal zoom. Mock-based UI checks do not validate live model answers.
 
-## Deployment plan: Vercel frontend and backend
+## Deployment
 
-Deployment is planned, not yet verified. Use two Vercel projects connected to this repository. Current Vercel runtime support, package limits, execution limits, and document inclusion must be checked before deployment; this README does not establish that the current backend fits those limits.
+The React frontend and FastAPI backend are deployed as separate Vercel projects. Pinecone stores the embeddings and document chunks, while OpenAI provides embeddings and answer generation.
+
+**Live application:** https://ironstore-ai-assistant.vercel.app/
 
 ### Frontend
 
