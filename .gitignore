@@ -1,0 +1,28 @@
+# Python environment and generated files
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Secrets
+.env
+.env.*
+!.env.example
+
+# Generated project data
+backend/storage/
+backend/evaluation/results/
+
+# Frontend
+node_modules/
+dist/
+.vite/
+
+# OS files
+.DS_Store
+__MACOSX/
+
+# Deployment
+.vercel/

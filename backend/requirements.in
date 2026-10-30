@@ -1,0 +1,21 @@
+# API
+fastapi
+uvicorn[standard]
+pydantic>=2,<3
+pydantic-settings>=2,<3
+
+# AI framework
+langchain>=1,<2
+langchain-openai
+langchain-text-splitters
+
+# Vector database SDK
+pinecone
+
+# Document processing
+pypdf
+tiktoken
+
+# Testing
+pytest
+httpx
